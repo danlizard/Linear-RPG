@@ -91,13 +91,13 @@ if cls=="Warrior":
     for i in range(0,len(Spells)):
         if int(Spells[i][3])==1:
             Character['Spells'][i]=1
-    Character['HpReg']=0.20
+    Character['HpReg']=1
 elif cls=="Mage":
     Character['Mp']+=10
     Character['Spells']=[1]*len(Spells)
     Character['Dmg']=Character['Arstat'][0]+Character['Westat'][0]
     Character['Block']=Character['Arstat'][1]+Character['Westat'][1]
-    Character['MpReg']=0.10
+    Character['MpReg']=2
 situation=1
 print("Your journey begins! You wandered throughout the land searching, and finally - you're standing before an ancient gateway! Go deeper than ever and see what lies beneath!")
 print("By the way, you have",Character['Hp'],"health points")
